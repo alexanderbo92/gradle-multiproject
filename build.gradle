@@ -3,7 +3,7 @@ plugins {
     id 'java-library' 
 }
 
-mainClassName = 'app.Main'
+//mainClassName = 'app.Main'
 
 jar {
     manifest {
