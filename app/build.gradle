@@ -6,6 +6,14 @@ plugins {
 
 mainClassName = 'app.Main'
 
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'app.Main'
+        )
+    }
+}
+
 dependencies {
     compile project(':base')
     

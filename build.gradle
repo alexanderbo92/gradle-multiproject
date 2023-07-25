@@ -3,6 +3,16 @@ plugins {
     id 'java-library' 
 }
 
+mainClassName = 'app.Main'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'app.Main'
+        )
+    }
+}
+
 allprojects {
     version = '1.0'
 }
