@@ -20,6 +20,7 @@ public abstract class MyBase implements MyInterface {
     f.addValue("One");
     f.addValue("oNe");
     f.addValue("Z");
+    f.addValue("edwin");
     // log.info("f.getCumPct('Z'): {}", f.getCumPct("Z")); // displays 0.5
   }
 }

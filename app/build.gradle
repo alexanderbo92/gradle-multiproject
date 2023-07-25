@@ -4,8 +4,13 @@ plugins {
     id 'org.springframework.boot' version '2.7.7'
 } 
 
-mainClassName = 'app.Main'
+//mainClassName = 'app.Main'
 
+jar {
+    enabled = false
+}
+
+/*
 jar {
     manifest {
         attributes(
@@ -13,7 +18,7 @@ jar {
         )
     }
 }
-
+*/
 dependencies {
     compile project(':base')
     
