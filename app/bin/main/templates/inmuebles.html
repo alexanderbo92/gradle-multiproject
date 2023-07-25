@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+	
+		<meta charset="ISO-8859-1"></meta>
+		<title>Inmuebles</title>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		
+		<link 	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+				rel="stylesheet" id="bootstrap-css">
+		</link>
+
+		<script
+			src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+		</script>
+		
+		<script type="text/javascript" th:src="@{/js/race.js}"></script>
+				
+	</head>
+
+<body>
+	<div th:replace="fragments/header :: header"></div> 
+	 	Finca Raiz: <p th:text="${fincaraiz}"></p>
+	  	Metro Cuadrado: <p th:text="${metrocuadrado}"></p> 
+	   	Cien Cuadras: <p th:text="${ciencuadras}"></p> 
+	   	Union de resultados: <p th:text="${unionresultados}"></p>   
+	   	Tiempo total: <p th:text="${tiempototal}+' '+miliseconds"></p>   	
+</body>
+
+</html>

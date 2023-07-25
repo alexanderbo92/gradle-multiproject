@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '2.7.7'
+} 
+
+//mainClassName = 'app.Main'
+
+dependencies {
+    compile project(':base')
+    
+    implementation("org.springframework.boot:spring-boot-starter-web:2.7.7")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf:2.7.7")
+    
+}
+
+/*
+task customFatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'app.Main'
+    }
+    baseName = 'executable'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+*/
