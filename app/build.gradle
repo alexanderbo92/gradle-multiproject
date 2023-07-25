@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'org.springframework.boot' version '2.7.7'
+    id 'war'
 } 
 
 //mainClassName = 'app.Main'
