@@ -27,11 +27,11 @@ dependencies {
     
     implementation("org.springframework.boot:spring-boot-starter-web:2.4.11")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf:2.4.11")
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.4.11'
+    //implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.4.11'
     
    // https://mvnrepository.com/artifact/com.sun.el/el-ri
 	implementation group: 'com.sun.el', name: 'el-ri', version: '3.0.4'
-    runtimeOnly 'com.h2database:h2:1.4.200'     
+    //runtimeOnly 'com.h2database:h2:1.4.200'     
         
     //runtimeOnly 'com.h2database:h2'   
     //developmentOnly 'org.springframework.boot:spring-boot-devtools'
