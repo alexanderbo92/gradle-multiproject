@@ -1,5 +1,5 @@
 plugins {
-    id 'com.github.sherter.google-java-format' version '0.9' apply false
+    //id 'com.github.sherter.google-java-format' version '0.9' apply false
    // id 'application' 
 }
 
@@ -22,7 +22,7 @@ allprojects {
 
 subprojects {
     apply plugin: 'java'
-    apply plugin: 'com.github.sherter.google-java-format'
+   // apply plugin: 'com.github.sherter.google-java-format'
 	
 	sourceCompatibility = 1.8 // java 8
 	targetCompatibility = 1.8
@@ -60,5 +60,5 @@ subprojects {
         useJUnitPlatform()
     }
 
-    compileJava.dependsOn tasks.googleJavaFormat
+    //compileJava.dependsOn tasks.googleJavaFormat
 }
