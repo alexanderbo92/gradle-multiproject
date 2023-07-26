@@ -24,6 +24,9 @@ subprojects {
     apply plugin: 'java'
     apply plugin: 'com.github.sherter.google-java-format'
 	
+	sourceCompatibility = 1.8 // java 8
+	targetCompatibility = 1.8
+	
 	if (project.name == "app") {
         //println project.name
 		tasks.withType(Jar) {
@@ -31,13 +34,15 @@ subprojects {
    		}
     }
 
-    dependencies {
+    dependencies { 
         // for type inference
         annotationProcessor 'org.projectlombok:lombok:1.18.12'
         compileOnly 'org.projectlombok:lombok:1.18.12'
         testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
         testCompileOnly 'org.projectlombok:lombok:1.18.12'
-
+		//runtimeOnly 'com.h2database:h2:1.4.200' 
+		//implementation 'com.h2database:h2:2.1.212' 
+		//runtimeOnly 'com.h2database:h2'  
         // for logging
         implementation 'ch.qos.logback:logback-classic:1.2.3'
         implementation 'org.slf4j:slf4j-api:1.7.26'
